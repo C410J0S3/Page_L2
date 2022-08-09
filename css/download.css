@@ -1,0 +1,116 @@
+/*======================CSS DOWNLOAD=========================*/
+
+#Download{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #000000;
+}
+
+.container_download{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_download h1{
+    position: absolute;
+    text-align:center ;
+    color: #ffffffaf;
+    font-size: 100px;
+    margin-bottom: 500px;
+}
+
+/*=====================SERVER==========================*/
+
+.server{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/DK_human_poster.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.server:hover{
+    width: 110%;
+    height: 110vh;
+}
+
+.server h2{
+    color: #ffffff59;
+    font-size: 8em;
+    top: 10px;
+    opacity: 0;
+    text-align: center;
+}
+
+.server:hover h2{
+    opacity: 1;
+}
+
+/*======================SYSTEM=========================*/
+
+.system{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/baium_illustration_scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.system h2{
+    color: #ffffff59;
+    font-size: 8em;
+    top: 10px;
+    opacity: 0;
+    transition: 2s;
+    text-align: center;
+}
+
+.system:hover{
+    width: 110%;
+    height: 110vh;
+}
+
+.system:hover h2{
+    opacity: 1;
+}
+
+/*=======================RESPONSIVE========================*/
+
+@media screen and (max-width: 900px) {
+    .container_download {
+      flex-direction: column;
+    }
+
+    .container_download h1{
+        display: none;
+    }
+
+    .server{
+        width: 100%;
+        height: 50vh;
+        background-image: url(../img/DK_human_poster.jpg) ;
+        background-size: cover;
+    }
+
+    .system{
+        width: 100%;
+        height: 50vh;
+        background-image: url(../img/baium_illustration_scaled.jpg) ;
+        background-size: cover;
+    }
+  }

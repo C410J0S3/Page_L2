@@ -1,0 +1,128 @@
+/*======================CSS MAIN=========================*/
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*======================VIDEO BACKGROUND=========================*/
+
+.container_video{
+    position: absolute;
+    top: -160px;
+    min-width: 100%; 
+	min-height: 100vh; 
+    width:cover;
+    height:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -99;
+}
+
+.container_video video{
+    min-width: 180rem;
+    height: cover;
+    overflow: hidden;
+    
+}
+
+/*========================LOGO CENTER=======================*/
+
+main .Logo_center{
+    position: relative;
+    width: 45%;
+    height: 45%;
+    max-width: 400px;
+    top: 100px;
+    z-index: -1;
+}
+
+/*=========================SCROLL INDICADOR======================*/
+
+.scroll {
+    display: block;
+    width: 2px;
+    height: 13vh;
+    position: absolute;
+    bottom: 0;
+    transform:translateX(-50%);
+    opacity: 1;
+}
+
+.scroll:before {
+    height: 100%;
+    background: #ffffff;
+    opacity:.2;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    width: 2px;
+}
+
+.scroll:after {
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    content: '';
+    position: absolute;
+    width: 2px; 
+    height:100%;
+    animation-name: scroll-line;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.77,0,.175,1);
+}
+
+/*=======================RESPONSIVE========================*/
+
+@-webkit-keyframes scroll-line {
+    0% {
+        transform-origin: 50% 100%;
+        transform: scaleY(1);
+    }
+    50% {
+        transform-origin: 50% 100%;
+        transform: scaleY(0);
+    }
+    50.0001% {
+        transform-origin: 50% 0;
+        transform: scaleY(0);
+    }
+    to {
+        transform-origin: 50% 0;
+        transform: scaleY(1);
+    }
+}
+@keyframes scroll-line {
+    0% {
+        transform-origin: 50% 100%;
+        transform: scaleY(1);
+    }
+    50% {
+        transform-origin: 50% 100%;
+        transform: scaleY(0);
+    }
+    50.0001% {
+        transform-origin: 50% 0;
+        transform: scaleY(0);
+    }
+    to {
+        transform-origin: 50% 0;
+        transform: scaleY(1);
+    }
+}
+
+.black{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    bottom: -20px;
+    background: linear-gradient( #00000000, #000000d2, #000000);
+}

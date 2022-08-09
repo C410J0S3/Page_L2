@@ -1,0 +1,47 @@
+/*======================CSS RATES=========================*/
+
+#Rates{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/wallpapertip_lineage-2-wallpaper_1697344.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+
+}
+
+.rate{
+    margin-left: 15%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.txt_rate{
+    width: 70%;
+    height: 20%;
+}
+.txt_rate h2{
+    font-size: 500%;
+    color: #ffffff;
+}
+
+.txt_rate_2{
+    margin-top: 40px;
+    width: 70%;
+    height: 40%;
+}
+.txt_rate_2 h3{
+    margin-top: 20px;
+    font-size: 300%;
+    font-weight: 700;
+    color: #ffffff;
+}

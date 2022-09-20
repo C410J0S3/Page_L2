@@ -1,7 +1,7 @@
 # page_l2
 Site responsivo de LineageII 
 
-Não está finalizado o loguin BTN !!!!!!!!!!!!
+Não está finalizado o loguin BTN !!!!!!!!!!!
 
 Sendo #Home utilizando video da NCwest como background
 
